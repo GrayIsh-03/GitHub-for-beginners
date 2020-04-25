@@ -1,5 +1,11 @@
-# Object file
-*.o
+# Created by https://www.gitignore.io/api/dm
+# Edit at https://www.gitignore.io/?templates=dm
 
-# Ada Library Information
-*.ali
+### DM ###
+*.dmb
+*.rsc
+*.int
+*.lk
+*.zip
+
+# End of https://www.gitignore.io/api/dm
