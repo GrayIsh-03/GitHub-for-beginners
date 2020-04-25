@@ -1,0 +1,31 @@
+body {
+	background-color: #dfffaa;
+	font-family: Calibri;
+}
+article {
+	padding: 0px;
+	margin: 10px;
+	width: 600px;
+}
+h1 {
+	color: #aa1111;
+	font-family: Arial;
+	text-shadow: #aa111f 3px 3px 10px;
+}
+article figure img {
+	padding: 5px;
+	width: 80%;
+}
+.qfig {
+	font-family: Arial Narrow;
+	font-size: 20px;
+	font-weight: 700;
+	color: #aa0011;
+}
+input[type="text"], input[type="email"] {
+  border: 1px solid blue;
+}
+label, input[type="text"], input[type="email"], textarea, input[type="submit"] {
+	padding: 5px;
+	margin: 5px;
+}
