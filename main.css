@@ -2,5 +2,5 @@ body {
 	background-color: purple;
 }
 p {
-	color: (0,250,25, 50%);
+	color: rgba(80,250,231,0.5); /* Полупрозрачный красный текст */
 }
