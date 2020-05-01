@@ -4,6 +4,18 @@ aside,
 footer {
   margin: 0 1.5% 24px 1.5%;
 }
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
 code {
   background: #2db34a;
   float: right;
