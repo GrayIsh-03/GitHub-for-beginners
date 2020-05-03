@@ -94,6 +94,7 @@ div {
   width: 70%;
   background-color: #D3FFCE;
   margin-left: 5px;
+  font-variant: normal;
 }
 .offset {
   position: relative;
