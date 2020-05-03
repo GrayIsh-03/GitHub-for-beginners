@@ -46,6 +46,31 @@ table {
 }
 /*
   ========================================
+  Пользовательские стили
+  ========================================
+*/
+body {
+  color: #888;
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+a:hover {
+  color: #a9b2b9;
+}
+a {
+  color: #648880;
+  text-decoration: none;
+}
+nav a {
+  border-bottom: 2px solid #dfe2e5;
+}
+/*
+  ========================================
   Сетка
   ========================================
 */
@@ -76,7 +101,7 @@ table {
 .col-1-3, .col-2-3 {
   vertical-align: top;
   display: inline-block;
-  background-color: #FFE664;
+  background-color: #FFFBAB;
 }
 /*
   ========================================
@@ -104,10 +129,50 @@ table {
 h1, h3, h4, h5, p {
   margin-bottom: 22px;
 }
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 .logo {
   float: left;
   padding: 40px 0 22px 0;
   border-top: 4px solid #648880;
+  font-size: 48px;
+  line-height: 44px;
+  margin-right: 10px;
+}
+.tagline {
+  margin: 70px 0 22px 260px;
+  text-align: right;
+  margin: 66px 0 22px 0;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
 }
 /*
   ========================================
@@ -129,7 +194,15 @@ h1, h3, h4, h5, p {
   ========================================
 */
 .hero {
+  line-height: 44px;
   padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
 }
 /*
   ========================================
@@ -139,8 +212,20 @@ h1, h3, h4, h5, p {
 
 .primary-footer small {
   float: left;
+  font-weight: 400;
 }
 .primary-footer {
+  color: #648880;
+  font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
+}
+/*
+  ========================================
+  Навигация
+  ========================================
+*/
+
+.nav {
+  text-align: right;
 }
