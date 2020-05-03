@@ -90,6 +90,16 @@ h1, h3, h4, h5, p {
   padding: 40px 0 22px 0;
   border-top: 4px solid #648880;
 }
+div {
+  width: 70%;
+  background-color: #D3FFCE;
+  margin-left: 5px;
+}
+.offset {
+  position: relative;
+  left: 80px;
+  top: 50px;
+}
 /*
   ========================================
   Кнопки
@@ -103,6 +113,9 @@ h1, h3, h4, h5, p {
 .btn-alt {
   border: 1px solid #dfe2e5;
   padding: 10px 30px;
+  position: absolute;
+  top: 200px;
+  left: 480px;
 }
 /*
   ========================================
