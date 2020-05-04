@@ -49,9 +49,10 @@ table {
   Пользовательские стили
   ========================================
 */
+
 body {
   color: #888;
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 strong {
   font-weight: 400;
@@ -159,6 +160,9 @@ h5 {
   font-size: 48px;
   line-height: 44px;
   margin-right: 10px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 }
 .tagline {
   margin: 70px 0 22px 260px;
@@ -200,9 +204,11 @@ h5 {
 }
 .hero h2 {
   font-size: 36px;
+  font-family: 'Marck Script', cursive;
 }
 .hero p {
   font-size: 24px;
+  font-weight: 100;
 }
 /*
   ========================================
