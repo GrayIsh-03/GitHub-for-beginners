@@ -52,6 +52,7 @@ table {
 
 body {
   color: #888;
+  background-color: #293f50;
   font: 300 16px/22px "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 strong {
@@ -123,6 +124,17 @@ nav a {
 }
 /*
   ========================================
+  Полосы
+  ========================================
+*/
+
+.row {
+  background: #FFFBAB;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+}
+/*
+  ========================================
   Типографика
   ========================================
 */
@@ -178,6 +190,14 @@ h5 {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
 /*
   ========================================
   Кнопки
@@ -187,10 +207,19 @@ h5 {
   display: inline-block;
   margin: 0;
   border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 .btn-alt {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
+}
+.btn-alt:hover {
+  background-color: #fff;
+  color: #648880;
 }
 /*
   ========================================
@@ -201,6 +230,7 @@ h5 {
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
+  color: #fff;
 }
 .hero h2 {
   font-size: 36px;
