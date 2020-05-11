@@ -127,11 +127,20 @@ nav a {
   Полосы
   ========================================
 */
-
-.row {
-  background: #FFFBAB;
+.row,
+.row-alt{
   min-width: 960px;
+}
+.row {
+  background: #FFFBAB ;
   padding: 66px 0 44px 0;
+}
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #a1d3b0, #dff30f);
+  background: -moz-linear-gradient(to right, #a1d3b0, #dff30f);
+  background: linear-gradient(to right, #a1d3b0, #dff30f);
+  padding: 44px 0 22px 0;
 }
 /*
   ========================================
