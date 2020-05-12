@@ -44,8 +44,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
 /*
   ========================================
   Пользовательские стили
@@ -56,13 +54,28 @@ body {
   color: #888;
   font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+a:hover {
+  color: #a9b2b9;
+}
+a {
+  color: #648880;
+  text-decoration: none;
+}
+nav a {
+  border-bottom: 2px solid #dfe2e5;
+}
 
 /*
   ========================================
   Сетка
   ========================================
 */
-
 *,
 *:before,
 *:after {
@@ -96,13 +109,11 @@ body {
 .col-2-3 {
   width: 66.66%;
 }
-
 /*
   ========================================
   Clearfix
   ========================================
 */
-
 .group:before,
 .group:after {
   content: "";
@@ -115,13 +126,11 @@ body {
   clear: both;
   *zoom: 1;
 }
-
 /*
   ========================================
   Полосы
   ========================================
 */
-
 .row,
 .row-alt{
   min-width: 960px;
@@ -137,19 +146,18 @@ body {
   background: linear-gradient(to right, #a1d3b0, #f6f1d3);
   padding: 44px 0 22px 0;
 }
-
 /*
   ========================================
   Типографика
   ========================================
 */
-
 h1, h2, h3, h4 {
   color: #648880;
 }
 h1, h3, h4, h5, p {
   margin-bottom: 22px;
 }
+
 h1 {
   font-size: 36px;
   line-height: 44px;
@@ -164,14 +172,12 @@ h3 {
 h4 {
   font-size: 18px;
 }
-
 h5 {
   color: #a9b2b9;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 strong {
   font-weight: 400;
 }
@@ -198,7 +204,6 @@ cite, em {
   Ссылки
   ========================================
 */
-
 a {
   color: #648880;
   text-decoration: none;
@@ -223,7 +228,6 @@ p a {
   Кнопки
   ========================================
 */
-
 .btn {
   border-radius: 5px;
   color: #fff;
@@ -271,23 +275,22 @@ p a {
   text-transform: uppercase;
 }
 
+
 /*
   ========================================
   Основной подвал
   ========================================
 */
-
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
 .primary-footer {
   color: #648880;
   font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
 }
-.primary-footer small {
-  float: left;
-  font-weight: 400;
-}
-
 /*
   ========================================
   Навигация
@@ -303,7 +306,6 @@ p a {
   Главная страница
   ========================================
 */
-
 .hero {
   color: #fff;
   line-height: 44px;
@@ -320,3 +322,4 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+
