@@ -264,6 +264,9 @@ p a {
   padding: 40px 0 22px 0;
   text-transform: uppercase;
 }
+.logo:hover{
+  border-top: 4px solid #8BBD35;
+}
 .tagline {
   margin: 66px 0 22px 0;
   text-align: right;
@@ -341,6 +344,7 @@ p a {
   margin-top: 88px;
   padding: 22px 0;
   text-align: center;
+  box-shadow: -5px 3px 0px 5px rgba(4,0,0,0.5);
 }
 .speaker {
   margin-bottom: 44px;
