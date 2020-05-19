@@ -363,6 +363,18 @@ p a {
 }
 /*
   ========================================
+  Расписание
+  ========================================
+*/
+table {
+  margin-bottom: 44px;
+  width: 100%;
+}
+table:last-child {
+  margin-bottom: 0;
+}
+/*
+  ========================================
   Место проведения
   ========================================
 */
@@ -378,7 +390,13 @@ p a {
   margin-top: -5px;
 }
 
-table {
+/*
+  ========================================
+  Hidden table
+  ========================================
+*/
+.hidden-tbl {
+  display: none;
   border-collapse: separate;
   border-spacing: 0;
   background-color: #acc;
@@ -504,3 +522,4 @@ textarea {
 .btn-default:hover {
   background: #77a198;
 }
+
