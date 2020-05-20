@@ -392,7 +392,7 @@ table:last-child {
 
 /*
   ========================================
-  Hidden table
+  Main table and Hidden table
   ========================================
 */
 .hidden-tbl {
@@ -404,37 +404,62 @@ table:last-child {
   color: #4a4a4d;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+table {
+  margin-bottom: 44px;
+  width: 100%;
+}
+table:last-child {
+  margin-bottom: 0;
+}
 th,
 td {
-  padding: 10px 15px;
-  vertical-align: middle;
+  padding-bottom: 22px;
+  vertical-align: top;
 }
-thead {
-  background: #395870;
-  background: linear-gradient(#49708f, #293f50);
-  color: #fff;
-  font-size: 11px;
-  text-transform: uppercase;
-}
-th:first-child {
-  border-top-left-radius: 5px;
-  text-align: left;
-}
-th:last-child {
-  border-top-right-radius: 5px;
-}
-tbody tr:nth-child(even) {
-  background: #f0f0f2;
-}
-tbody tr:nth-child(odd) {
-  background: #fa0;
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
 }
 td {
-  border-bottom: 2px solid #cecfd5;
-  border-right: 2px solid #cecfd5;
+  width: 40%;
 }
-td:first-child {
-  border-left: 2px solid #cecfd5;
+thead {
+  line-height: 44px;
+}
+thead th {
+  color: #648880;
+  font-size: 24px;
+}
+tbody th {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase;
+}
+tbody td {
+  border-top: 1px solid #dfe2e5;
+  padding-top: 21px;
+}
+tbody td:first-of-type {
+  padding-right: 15px;
+}
+tbody td:last-of-type {
+  padding-left: 15px;
+}
+tbody td:only-of-type {
+  padding-left: 0;
+  padding-right: 0;
+}
+table a {
+  color: #888;
+}
+table h4 {
+  margin-bottom: 0;
+}
+.schedule-offset {
+  color: #a9b2b9;
 }
 .book-title {
   color: #395870;
