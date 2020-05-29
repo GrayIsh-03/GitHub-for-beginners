@@ -62,3 +62,13 @@
     90% { transform: none; }   
     95% { transform: scaleY(0.5); }
       }
+
+      /*circle target*/
+      .french {
+    width: 200px;  height: 200px; /* Размеры */
+    border-radius: 50%; /* Превращаем в круг */
+    margin: auto; /* Выравниваем по центру */
+    background: radial-gradient(circle at center, 
+        #000e5e 24%, #fff 25%, #fff 50%, #c70102 51%, #c70102);/* разница в 1 процент сглаживает переход,
+                                                               иначе получается лестница*/
+    }
