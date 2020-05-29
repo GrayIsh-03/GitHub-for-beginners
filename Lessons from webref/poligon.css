@@ -1,6 +1,10 @@
+/*летающие блоки*/
+
 @keyframes move {
-    from { left: 0; }
-    to { left: 100%; transform: translateY(-50px); }
+    0% { left: 0; }
+    50% {transform: translateY(200px);}
+    60% {transform: translateY(0);}
+    100% { left: 100%; transform: translateY(150px); }
    }
    .box {
     background: #fc0;
@@ -8,7 +12,8 @@
     padding: 20px 0;	
     text-align: center;
     position: absolute;
-    animation: move 10s infinite;
+    animation: move 15s infinite;
+    display: none;
    }
    .normal {
     animation-direction: normal;
@@ -22,6 +27,7 @@
    .reverse {
     top: 200px;
     animation-direction: reverse;
+    animation-timing-function: steps(5, start); 
     background-color: #c8eaf5;
    }
    .alternate-reverse {
@@ -29,4 +35,30 @@
     animation-direction: alternate-reverse;
     background-color: #ffead0;
    }
-   
+
+   /*смайлик*/
+
+   .creature { 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #3ac;
+    position: relative;
+    display: '';
+   }
+   .creature::before, .creature::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    top: 40px;
+    animation: eye 3s ease-in-out infinite;
+   }
+   .creature::before { left: 55px; }
+   .creature::after { right: 55px; }
+   @keyframes eye {
+    90% { transform: none; }   
+    95% { transform: scaleY(0.5); }
+      }
