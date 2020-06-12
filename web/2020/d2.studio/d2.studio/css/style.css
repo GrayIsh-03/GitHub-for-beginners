@@ -51,11 +51,36 @@ body {
   background-color: #c267dd;
 }
 header{
-  background-color: #dd0;
+background: #b5bdc8; /* Old browsers */
+background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 49%, #828c95 54%, #28343b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #b5bdc8 0%,#828c95 49%,#828c95 54%,#28343b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 49%,#828c95 54%,#28343b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
 }
 section{
   background-color: #878;
 }
 footer{
   background-color: #e50;
+}
+========================================
+  Structure
+========================================
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main {
+  margin: 0 auto;
+  width: 960px;
+}
+.logo{
+  width: 250px;
+  height: 250px;
+}
+.logo img{
+  max-width: 100%;
 }
