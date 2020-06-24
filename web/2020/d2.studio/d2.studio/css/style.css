@@ -78,8 +78,9 @@ footer{
   width: 960px;
 }
 .logo{
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
+  float: left;
 }
 .logo img{
   max-width: 100%;
