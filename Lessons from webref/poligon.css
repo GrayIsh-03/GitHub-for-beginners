@@ -106,3 +106,22 @@
     border: 1px solid #fff; /* Параметры рамки */
     border-radius: 5px; /* Радиус скругления */
    }
+
+    .ingredients {
+    padding: 0; /* Убираем отступы */
+   }
+   .ingredients li {
+    align-items: baseline; /* Выравниваем текст */
+    display: flex; /* Включаем флексы */
+    margin-bottom: 0.5em; /* Отступ снизу */
+   }
+   .ingredients li::before {
+    content: ''; /* Выводим линию */
+    border-bottom: 1px dashed #ccc; /* Параметры линии */
+    flex-grow: 0.5; /* Линия занимает половину доступного пространства */
+    order: 2; /* Выводим вторым */
+    margin: 0 5px; /* Расстояние от текста */
+   }
+   .ingredients .value {
+    order: 3; /* Выводим третьим */
+   }
