@@ -72,7 +72,7 @@
         #000e5e 24%, #fff 25%, #fff 50%, #c70102 51%, #c70102);/* разница в 1 процент сглаживает переход,
                                                                иначе получается лестница*/
     }
-
+/*ломанный прямоугольник*/
     .panel {
     font-family: Arial, Helvetica, sans-serif;
     color: #4d4d4f; /* Цвет текста */
@@ -107,6 +107,7 @@
     border-radius: 5px; /* Радиус скругления */
    }
 
+/*применяем соединительную линию, используя flex*/
     .ingredients {
     padding: 0; /* Убираем отступы */
    }
@@ -124,4 +125,37 @@
    }
    .ingredients .value {
     order: 3; /* Выводим третьим */
+   }
+
+/*создаём треугольник*/
+   .block {
+    width: 300px; /* Ширина блока */
+    margin: auto;
+   }
+   .photo img { display: block; }
+   .block .title {
+    font: normal 20px Arial, sans-serif; /* Параметры шрифта */
+    background: #f7f7f7; /* Цвет фона */
+    color: #2d3032; /* Цвет текста */
+    border-bottom: 2px solid #ecebe9; /* */
+    padding: 1em; /* Поля вокруг текста */
+    position: relative; /* Относительное позиционирование */
+   }
+   .block .title::before {
+    content: ''; /* Выводим треугольник */
+    left: 0; top: 1em; /* Положение треугольника */
+    /* Создание треугольника */
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent transparent #de3a31;
+    position: absolute; /* Абсолютное позиционирование */
+   }
+   .block:hover .title {
+    background: #323e4e; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    border-color: #de3a31; /* Цвет линии снизу */
+   }
+   .block:hover .title::before {
+    border-left-color: #fff; /* Цвет треугольника */
    }
