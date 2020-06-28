@@ -132,7 +132,8 @@
     width: 300px; /* Ширина блока */
     margin: auto;
    }
-   .photo img { display: block; }
+   .photo img { display: block;
+   border-radius: 70% }
    .block .title {
     font: normal 20px Arial, sans-serif; /* Параметры шрифта */
     background: #f7f7f7; /* Цвет фона */
@@ -143,7 +144,7 @@
    }
    .block .title::before {
     content: ''; /* Выводим треугольник */
-    left: 0; top: 1em; /* Положение треугольника */
+    right: 0; top: 1em; /* Положение треугольника */
     /* Создание треугольника */
     width: 0; height: 0;
     border-style: solid;
@@ -158,4 +159,48 @@
    }
    .block:hover .title::before {
     border-left-color: #fff; /* Цвет треугольника */
+   }
+
+/* Создание треугольника shadow */
+   .note {
+    position: relative; /* Относительное позиционирование */
+    background: #c5df94; /* Цвет фона */
+    padding: 20px; /* Поля вокруг текста */
+    overflow: hidden; /* Обрезаем лишнее */ 
+   }
+   .note::after {
+    content: ''; /* Выводим треугольник */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; right: 0; /* Положение треугольника */
+    /* Создание треугольника */
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 20px 0 0 20px;
+    border-color: #fff transparent transparent #e2edc1;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+   }
+
+/* Создание hard shadow */
+   .shadow {
+    background: #f7f7f7; /* Цвет фона */
+    border: 1px solid #ccc; /* Параметры рамки */
+    padding: 20px; /* Поля вокруг текста */
+    position: relative; /* Относительное позиционирование */
+   }
+   .shadow::before, .shadow::after {
+    content: ''; /* Вывод тени */
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 15px; /* Положение снизу */
+    left: 10px; /* Положение слева */
+    width: 50%; /* Ширина тени */
+    max-width: 300px; /* Максимальная ширина тени */
+    height: 15px; /* Высота тени */
+    box-shadow: 0 15px 10px rgba(0,0,0,0.5); /* Тень */
+    transform: rotate(-3deg); /* Поворот */
+    z-index: -1; /* Опускаем ниже блока */
+   }
+   .shadow::after {
+    transform: rotate(3deg); /* Поворот */
+    right: 10px; /* Положение справа */
+    left: auto; /* Восстанавливаем положение слева */
    }
