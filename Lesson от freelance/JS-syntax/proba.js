@@ -108,11 +108,13 @@ let login = prompt ('login please', '');
 (pass == null || pass == '') ? alert ('Canceled') :
 alert ('Wrong password'); */
 
-let a = 1, b = 1;
-let f;
-let c = a++; // ?
-let d = b++; // ?
- b += b++;
-alert(b);
-c += a++;
-alert(c);
+let range=20;
+let checkCond;
+nextPrime:
+for (checkCond=2;checkCond<=range;checkCond++){
+
+	for (let divider=2;divider<checkCond;divider++){
+		if (checkCond%divider==0) continue nextPrime;
+	}
+alert(checkCond);
+}
