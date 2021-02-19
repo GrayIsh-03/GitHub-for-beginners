@@ -108,6 +108,7 @@ let login = prompt ('login please', '');
 (pass == null || pass == '') ? alert ('Canceled') :
 alert ('Wrong password'); */
 
+/*
 let range=20;
 let checkCond;
 nextPrime:
@@ -117,4 +118,47 @@ for (checkCond=2;checkCond<=range;checkCond++){
 		if (checkCond%divider==0) continue nextPrime;
 	}
 alert(checkCond);
+} */
+
+/*
+let browser;
+browser=prompt('enter the browser used', '');
+if (browser=="Edge") {
+	alert('You`ve got the Edge!');
+} else if (browser=='Chrome'
+	||browser=='FireFox'
+	||browser=='Safari'
+	||browser=='Opera') {
+	alert('Okay we support these browser too');
+} else {
+	alert('We hope that this page looks ok!');
+} */
+
+/*
+let number=prompt('enter to number between zero and three','');
+switch(number) {
+	case '0':
+	alert('You enter to number zero');
+	break;
+	case '1':
+	alert('You enter to number one');
+	break;
+	case 2:
+	alert('You enter to number two');
+	break;
+	case '3':
+	alert('You enter to number three');
+	break;
+	default:
+	alert('Learn to count');
+} */
+let age=prompt('enter age','');
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    // ...
+    return confirm('Родители разрешили?');
+  }
 }
+checkAge(age);
