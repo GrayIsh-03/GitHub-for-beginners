@@ -152,13 +152,16 @@ switch(number) {
 	default:
 	alert('Learn to count');
 } */
-let age=prompt('enter age','');
-function checkAge(age) {
-  if (age > 18) {
-    return true;
-  } else {
-    // ...
-    return confirm('Родители разрешили?');
-  }
+
+/*
+function CheckAge(Cond){
+	let age=prompt('Enter how old are you','')
+return (age>18) ? true : confirm('Did the parents allow it?');
 }
-checkAge(age);
+alert(CheckAge()); */
+
+function CheckAge(Cond){
+	let age=prompt('Enter how old are you','')
+return (age>18) || confirm('Did the parents allow it?');
+}
+alert(CheckAge());
