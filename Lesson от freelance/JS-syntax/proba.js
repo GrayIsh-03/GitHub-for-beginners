@@ -150,7 +150,7 @@ switch(number) {
 	alert('You enter to number three');
 	break;
 	default:
-	alert('Learn to count');
+	alert('Learn to count'); Вводим число от 1 до 3, выполнится код соответствующий значению switch
 } */
 
 /*
@@ -158,10 +158,44 @@ function CheckAge(Cond){
 	let age=prompt('Enter how old are you','')
 return (age>18) ? true : confirm('Did the parents allow it?');
 }
-alert(CheckAge()); */
+alert(CheckAge()); Проверка возраста, если больше 18 то возвращает
+истину, если <= спрашивает разрешение родителей и возвращает значение*/
 
+/*
 function CheckAge(Cond){
 	let age=prompt('Enter how old are you','')
 return (age>18) || confirm('Did the parents allow it?');
 }
-alert(CheckAge());
+alert(CheckAge()); Проверка возраста, если больше 18 то возвращает
+истину, если <= спрашивает разрешение родителей и возвращает значение*/
+
+/*
+function getMinNumb (a,b){
+return (a>b) ? b: a;
+}
+getMinNumb(2,5);
+alert(getMinNumb(1,1)); Возвращает минимальное значение из двух чисел */
+
+/*
+function pow(x, n) {
+  let result = x;
+  for (let i = 1; i < n; i++) {
+    result *= x;
+  }
+  return result;
+}
+
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if (n < 1) {
+  alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+} else {
+  alert( pow(x, n) );
+} */
+
+let ask = confirm('Do you Agree?', '')
+	 , reponse = (ask == true) ?
+	 () => alert('You agreed') :
+	 () => alert('You canceled the execution');
+	 reponse();
