@@ -194,8 +194,43 @@ if (n < 1) {
   alert( pow(x, n) );
 } */
 
+/*
 let ask = confirm('Do you Agree?', '')
 	 , reponse = (ask == true) ?
 	 () => alert('You agreed') :
 	 () => alert('You canceled the execution');
-	 reponse();
+	 reponse(); */
+
+	/* let user = {
+	 	name: 'John',
+	 };
+
+	 user.surname = 'Smith';
+	 user.name = 'Pete';
+	 alert(user.surname);
+	 delete user.name;
+	 alert(user.name); */
+
+	/* NOT DECIDED
+	let shedule = {
+		name: 'Foma',
+	};
+	 
+	 function isEmpty(obj) {
+	 	return shedule.noSuchProperty === undefined
+	 	|| !true;
+	 }
+	 alert(isEmpty());
+	 alert(isEmpty()); */
+
+/* NOT DECIDED
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+};
+for (let sumSalary in salaries) {
+	sumSalary = +salaries.John + +salaries.Ann + 
+	+salaries.Pete;
+	alert(sumSalary);
+}
