@@ -211,26 +211,62 @@ let ask = confirm('Do you Agree?', '')
 	 delete user.name;
 	 alert(user.name); */
 
-	/* NOT DECIDED
-	let shedule = {
-		name: 'Foma',
-	};
-	 
+	 /*
+	let shedule = {};
 	 function isEmpty(obj) {
-	 	return shedule.noSuchProperty === undefined
-	 	|| !true;
-	 }
-	 alert(isEmpty());
-	 alert(isEmpty()); */
 
-/* NOT DECIDED
+	 	for (let key in shedule) {
+	 		return false;
+	 	}
+	 	return true;
+
+	 }
+
+	 alert(isEmpty());
+	 shedule.name = 'Foma';
+	 alert(isEmpty());  Проверка на пустоту объекта*/
+
+/*
 let salaries = {
   John: 100,
   Ann: 160,
-  Pete: 130
+  Pete: 130,
 };
-for (let sumSalary in salaries) {
-	sumSalary = +salaries.John + +salaries.Ann + 
+
+function SumSalar(clear){
+	sum = +salaries.John + +salaries.Ann + 
 	+salaries.Pete;
-	alert(sumSalary);
+	 for (clear in salaries) {
+	 	return sum;
+	}
+	return 0; my first option
+
+	let sum = 0;
+	for (clear in salaries){
+		sum += salaries[clear];
+	}
+	return sum;
 }
+alert(SumSalar());*/
+
+/*
+let menu = {
+	wight: 400,
+	height: 600,
+	title: 'My menu',
+};
+function multiplyNumeric() {
+
+	for (let key in menu) {
+		if (typeof menu[key] == 'number') {
+			menu[key] *= 2;
+		}
+	}
+
+}
+
+multiplyNumeric();
+
+for (let key in menu) {
+	alert(menu[key]);
+} */
