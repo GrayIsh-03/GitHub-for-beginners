@@ -1,3 +1,4 @@
+/*
 let calculator = {
 		readF () {
 		this.x = +prompt('Enter the first value','');
@@ -12,4 +13,11 @@ let calculator = {
 };
 calculator.readF();
 alert(calculator.sumF());
-alert(calculator.mulF());
+alert(calculator.mulF());  */
+
+function User(name) {
+	this.name = name;
+	this.admin = false;
+}
+let user = new User('Jon');
+user = new User('Masha');

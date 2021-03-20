@@ -270,3 +270,19 @@ multiplyNumeric();
 for (let key in menu) {
 	alert(menu[key]);
 } */
+/*function greet (name, owner) {
+  
+  switch (name) {
+     case owner:
+      alert('Hello boss');
+      break;
+      case !owner:
+      alert('Hello guest');
+      break;
+  }
+
+}
+alert(greet(1, 1));*/
+
+let myPlanet;
+let userCurrent;
