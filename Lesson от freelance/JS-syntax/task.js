@@ -96,6 +96,17 @@ let a = prompt("Первое число?", 1);
 let b = prompt("Второе число?", 2);
 alert(a + b); // 12
 alert(+a + +b); // 3, можно сделать через +prompt
+
+
+let i = 0;
+while (++i < 5) alert( i ); // от 1 до 4
+
+let i = 0;
+while (i++ < 5) alert( i ); // от 1 до 5
+
+for (let i = 0; i < 5; ++i) alert( i ); // от 0 до 4
+
+for (let i = 0; i < 5; i++) alert( i ); // от 0 до 4
 */
 
 
@@ -187,8 +198,10 @@ let height = 0;
 
 alert(height || 100); // 100 returns the first true value
 alert(height ?? 100); // 0 returns the first value defined
+*/
 	
 
+/*                  SIXTH BLOCK
 	for (let i = 0; i < 10; i++) {
   Вложенный if начиная с 0 проверяет условие, что взятый
   остаток от деления i на 2 тождественен 0 или нет. Если i
@@ -201,4 +214,73 @@ alert(height ?? 100); // 0 returns the first value defined
   
   if (i % 2 == 0) continue;
   alert(i); // 1, затем 3, 5, 7, 9
-} */
+
+  Мы можем не использовать continue, завернув вычисления в
+  блок if, увеличив вложенность фигурных скобок. Но если код
+  внутри if более длинный, то это ухудшает читаемость, в 
+  отличие от варианта с continue. if работает следующим образом
+  если остаток от деления i на 2 равен 0, то 0 преобразуется
+  в логическое значение false, если остаток от деления не равен
+  0, что характерно для нечётных значений, то логическое
+  значение станет true и выполнится alert.
+
+
+  if (i % 2) {
+    alert( i );
+  }
+
+}
+
+
+
+outer:
+for (let i = 0; i < 3; i++) {
+
+  for (let j = 0; j < 3; j++) {
+
+    let input = prompt(`Значение на координатах (${i},${j})`, '');
+    if(!input) break outer;
+    В данном случае break разрывает внешний цикл с меткой
+    outer: и передаёт управление за пределы цикла к alert.
+    Без метки outer: break прервал бы только вложенный цикл.
+  }
+
+}
+
+alert('Готово!'); 
+
+
+// Print even values ​​from 2 to 10
+for (let i = 2; i <= 10; i++) {
+	// if ( !(i % 2) ) alert(i); first variant
+	// if (i % 2 == 0) alert(i); second variant
+	if (i % 2) continue;
+	alert(i); // third variant
+}
+
+// replace for with while
+for (let i = 0; i < 3; i++) {
+  alert( `number ${i}!` );
+}
+
+let i = 0;
+while (i < 3) {
+	alert(`number ${i}!`);
+	i++;
+}
+
+// 
+let number;
+do {
+	number = prompt ('Enter the number greater than one hundred', '0');
+} while (number <= 100 && number);*/
+
+
+let n = 10;
+for (let i = 2; i <= n; i++) {
+
+	for (let j = 2; j < i; j++) {
+		if (i % j == 0) continue;
+		
+	}
+}
