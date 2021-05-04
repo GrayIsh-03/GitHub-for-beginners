@@ -273,14 +273,72 @@ while (i < 3) {
 let number;
 do {
 	number = prompt ('Enter the number greater than one hundred', '0');
-} while (number <= 100 && number);*/
+} while (number <= 100 && number);
 
-
+// display prime numbers in a range n
 let n = 10;
+outer: 
 for (let i = 2; i <= n; i++) {
 
 	for (let j = 2; j < i; j++) {
-		if (i % j == 0) continue;
-		
+		if (i % j == 0) continue outer;
 	}
+	alert(i);
+
+
+// rewrite the swith on the if else
+let browser = prompt('Enter your browser', '');
+
+if (browser === 'Edge') {
+	alert('You,ve got the Edge');
+
+} else if (browser === 'Chrome' 
+	|| browser === 'Opera' 
+	|| browser === 'Safari'
+	|| browser === 'Firefox') {
+	alert('Okey we support these browser too');
+
+} else {
+	alert('We hope that this page looks ok!');
+
 }
+
+const number = +prompt('Enter а number between 0 and 3', '');
+switch(number) {
+	case 0:
+		alert('You entered the number 0');
+		break;
+	case 1:
+		alert('You entered the number 1');
+		break;
+	case 2:
+	case 3:
+		alert('You entered the number 2, or maybe 3');
+		break;
+	default:
+		alert('Undefined value');
+}
+
+
+function checkAge(age) {
+	return (age > 18) || confirm(' Are parents allowed');
+}
+// (age > 18) ? true : confirm(' Are parents allowed'); 
+checkAge(18);
+
+function getMin(a, b) {
+	// return (a < b) ? a : b;
+	if (a < b) {
+		return a;
+} return b;
+}
+alert(getMin(2, 1)); */
+
+function pow(x, n) {
+		let result;
+	for (let check = 0; check <= n; ++check) {
+			result = x * x;
+	}
+	return result;
+}
+alert( pow (2, 3) );
